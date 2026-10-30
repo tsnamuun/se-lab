@@ -8,6 +8,7 @@ import java.util.Random;
 * (Deliberately contains bugs.)
 */
 public class TorpedoStore {
+  // Reuse the Random instance instead of creating a new one for every firing operation.
   private final Random generator = new Random();
 
   // rate of failing to fire torpedos [0.0, 1.0]
